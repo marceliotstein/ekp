@@ -1,0 +1,322 @@
+/*
+ Theme Name:   Responsive EKP
+ Description:  Responsive EKP Child Theme
+ Author:       Marc Eliot Stein
+ Author URI:   http://marceliotstein.com
+ Template:     responsive
+ Version:      1.0.0
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+ Text Domain:  responsive-ekp
+*/
+
+body {
+  background: #cacaca;
+  color: #000000;
+}
+
+/* =Home page featured content 
+-------------------------------------------------------------- */
+
+#featured-content li {
+  list-style-type: none;
+}
+
+#featured-content ul {
+  padding: 0;
+  margin: 0;
+}
+
+#featured-content a {
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+#featured-content h3 {
+  font-size: 1.4em;
+  margin-bottom: .6em;
+  margin-top: .6em;
+}
+
+/* =Links
+-------------------------------------------------------------- */
+a {
+	color: #440088;
+	font-weight: 400;
+	text-decoration: none;
+}
+
+a:hover,
+a:focus,
+a:active {
+	color: #6600aa;
+	outline: 0;
+	text-decoration: none;
+}
+
+a::-moz-selection {
+	background: #999999;
+	color: #ffffff;
+	text-shadow: none;
+}
+
+/* =Globals
+-------------------------------------------------------------- */
+#container {
+	margin: 0 auto;
+	max-width: 960px;
+	padding: 0px 25px;
+}
+
+#wrapper {
+	background-color: #cacaca;
+	border: 0px;
+	clear: both;
+	margin: 20px auto 20px auto;
+	padding: 0 20px 20px 20px;
+	position: relative;
+}
+
+.front-page #wrapper {
+	background-color: transparent;
+	border: none;
+	margin: 20px auto 20px auto;
+	padding: 0;
+}
+
+/* =Featured Content
+-------------------------------------------------------------- */
+#featured {
+	background-color: #cacaca;
+	border: 0px;
+	padding-bottom: 40px;
+	width: 99.893617021277%;
+}
+
+#featured p {
+	font-size: 18px;
+	font-weight: 200;
+	line-height: 27px;
+	padding: 0 40px 0 40px;
+	text-align: center;
+}
+
+#featured-image {
+	margin: 40px 0 0 0;
+}
+
+#featured-image .fluid-width-video-wrapper {
+	margin-left: -20px;
+}
+
+.featured-image img {
+	margin-top: 44px;
+}
+
+/* =Header Menu (Primary)
+-------------------------------------------------------------- */
+.menu {
+        background-color: #cacaca;
+        border-width: 0px;
+        background-image: none;
+        clear: both;
+        margin: 0 auto;
+}
+
+.main-nav {
+	clear: both;
+}
+
+@media screen and (max-width: 650px) {
+  .js .main-nav {
+    background-color: #cacaca;
+    background-image: none;
+    color: #000000;
+    -ms-filter: none;
+  }
+
+  .js .main-nav a#responsive_menu_button {
+    background-color: #000000;
+    padding-top: 0px;
+    padding-right: 4px;
+    padding-bottom: 0px;
+    padding-left: 3px;
+    border-radius: 5px;
+  }
+  
+  .js .main-nav #responsive_current_menu_item {
+    display: none;
+  }
+}
+
+.menu,
+.menu ul {
+	display: block;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.menu li {
+	border: 0;
+	display: block;
+	float: left;
+	margin: 0;
+	padding: 0;
+	position: relative;
+	z-index: 5;
+}
+
+.menu li:hover {
+	white-space: normal;
+	z-index: 10000;
+}
+
+.menu li li {
+	float: none;
+}
+
+.menu ul {
+	left: 0;
+	position: absolute;
+	top: 0;
+	visibility: hidden;
+	z-index: 10;
+}
+
+.menu li:hover > ul {
+	top: 100%;
+	visibility: visible;
+}
+
+.menu li li:hover > ul {
+	left: 100%;
+	top: 0;
+}
+
+.menu:after,
+.menu ul:after {
+	clear: both;
+	content: '.';
+	display: block;
+	height: 0;
+	overflow: hidden;
+	visibility: hidden;
+}
+
+.menu,
+.menu ul {
+	min-height: 0;
+}
+
+.menu ul,
+.menu ul ul {
+	margin: 0;
+	padding: 0;
+}
+
+.menu ul li a:hover,
+.menu li li a:hover {
+	color: #484848;
+	text-decoration: none;
+}
+
+.menu ul {
+	margin-top: 1px;
+	min-width: 15em;
+	width: auto;
+}
+
+.menu a {
+	border-left: 0px;
+	color: #000000;
+	cursor: pointer;
+	display: block;
+	font-size: 13px;
+	font-weight: 700;
+	height: 35px;
+	line-height: 35px;
+	margin: 0;
+	padding: 0 0.9em;
+	position: relative;
+        text-shadow: none;
+	text-decoration: none;
+	white-space: nowrap;
+}
+
+.menu a:hover {
+	background-color: transparent;
+	background-image: none;
+	color: #000000;
+}
+
+ul.menu > li:hover {
+	background-color: transparent;
+	color: #000000;
+}
+
+.menu .current_page_item a,
+.menu .current-menu-item a {
+	background-color: transparent;
+}
+
+.front-page .menu .current_page_item a {
+	background: none;
+	background-color: transparent;
+	background-image: none;
+	filter: none;
+}
+
+.menu li li {
+	background: #cacaca;
+	background-image: none;
+	border: 0px;
+	color: #000000;
+	filter: none;
+	margin: -1px 0 1px 0;
+	width: auto;
+}
+
+.menu li li a {
+	background: transparent !important;
+	border: none;
+	color: #000000;
+	font-size: 12px;
+	font-weight: 400;
+	height: auto;
+	height: 20px;
+	line-height: 20px;
+	padding: 5px 10px;
+	text-shadow: none;
+	white-space: nowrap;
+}
+
+.menu li li a:hover {
+	background: #cacaca !important;
+	background-image: none;
+	border: none;
+	color: #000000;
+	filter: none;
+}
+
+.menu li li:hover {
+	background: #cacaca !important;
+	filter: none;
+}
+
+.menu ul > li + li {
+	border-top: 0;
+}
+
+.menu li li:hover > ul {
+	left: 100%;
+	top: 0;
+}
+
+.menu > li:first-child > a {
+	border-left: none;
+}
+
+.menu a#responsive_menu_button {
+	display: none;
+}
