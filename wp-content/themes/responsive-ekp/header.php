@@ -40,6 +40,8 @@ if ( !defined( 'ABSPATH' ) ) {
 		<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>"/>
 
 		<?php wp_head(); ?>
+
+                <link href="https://fonts.googleapis.com/css?family=Arvo|BioRhyme+Expanded:300,400|Slabo+27px" rel="stylesheet">
 	</head>
 
 <body <?php body_class(); ?>>
@@ -48,11 +50,9 @@ if ( !defined( 'ABSPATH' ) ) {
 <div id="container" class="hfeed">
 
 <?php responsive_header(); // before header hook ?>
-        <!--
 	<div class="skip-container cf">
 		<a class="skip-link screen-reader-text focusable" href="#content"><?php _e( '&darr; Skip to Main Content', 'responsive' ); ?></a>
-	</div>
-        -->
+	</div><!-- .skip-container -->
 	<div id="header">
 
 		<?php responsive_header_top(); // before header content hook ?>

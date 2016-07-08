@@ -23,9 +23,9 @@ $db = get_option( 'responsive_theme_options' );
 
 	<div id="featured-image" class="grid col-460 fit">
 
-		<?php $featured_content = ( !empty( $responsive_options['featured_content'] ) ) ? $responsive_options['featured_content'] : '<img class="aligncenter" src="/ekp/wp-content/themes/responsive-ekp/images/eliot-440.jpg" width="440" alt="" />'; ?>
+                <?php $featured_content = ( !empty( $responsive_options['featured_content'] ) ) ? $responsive_options['featured_content'] : '<img class="aligncenter" src="/ekp/wp-content/themes/responsive-ekp/images/eliot-440.jpg" alt="" />'; ?>
 
-		<?php echo do_shortcode( wpautop( $featured_content ) ); ?>
+                <?php echo do_shortcode( wpautop( $featured_content ) ); ?>
 
 	</div><!-- end of #featured-image -->
 

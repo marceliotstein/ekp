@@ -11,12 +11,36 @@
 */
 
 body {
-  background: #cacaca;
+  background: #c8c8c8;
   color: #000000;
 }
 
+#content {
+  margin-top: 0px;
+}
+
+.post-meta {
+  color: #000000;
+}
+
+.byline {
+  color: #000000;
+}
+
+#footer {
+  font-family: 'BioRhyme Expanded', serif;
+}
+
+#featured img {
+  width: 340px;
+}
+  
 /* =Home page featured content 
 -------------------------------------------------------------- */
+
+#featured {
+  margin-left: 35px;
+}
 
 #featured-content li {
   list-style-type: none;
@@ -25,23 +49,28 @@ body {
 #featured-content ul {
   padding: 0;
   margin: 0;
+  margin-left: 3px;
 }
 
 #featured-content a {
-  font-weight: bold;
-  font-size: 1.1em;
+  font-weight: 400;
+  font-size: 1.2em;
+  font-family: 'Slabo 27px', serif;
 }
 
 #featured-content h3 {
-  font-size: 1.4em;
+  color: purple;
+  font-family: 'Slabo 27px', serif;
+  font-weight: 400;
   margin-bottom: .6em;
   margin-top: .6em;
+  margin-left: 3px;
 }
 
 /* =Links
 -------------------------------------------------------------- */
 a {
-	color: #440088;
+	color: purple;
 	font-weight: 400;
 	text-decoration: none;
 }
@@ -69,7 +98,7 @@ a::-moz-selection {
 }
 
 #wrapper {
-	background-color: #cacaca;
+	background-color: #c8c8c8;
 	border: 0px;
 	clear: both;
 	margin: 20px auto 20px auto;
@@ -86,11 +115,13 @@ a::-moz-selection {
 
 /* =Featured Content
 -------------------------------------------------------------- */
+
 #featured {
-	background-color: #cacaca;
-	border: 0px;
-	padding-bottom: 40px;
-	width: 99.893617021277%;
+  padding-top: 24px;
+  background-color: #c8c8c8;
+  border: 0px;
+  padding-bottom: 24px;
+  width: 99.893617021277%;
 }
 
 #featured p {
@@ -102,34 +133,49 @@ a::-moz-selection {
 }
 
 #featured-image {
-	margin: 40px 0 0 0;
+  margin: 0px;
+  padding: 0px;
+}
+
+#featured-image img {
+  border: 1px solid black;
 }
 
 #featured-image .fluid-width-video-wrapper {
-	margin-left: -20px;
+  margin-left: -20px;
 }
 
 .featured-image img {
-	margin-top: 44px;
+  margin-top: 44px;
 }
 
 /* =Header Menu (Primary)
 -------------------------------------------------------------- */
 .menu {
-        background-color: #cacaca;
-        border-width: 0px;
-        background-image: none;
-        clear: both;
-        margin: 0 auto;
+ background-color: #c8c8c8;
+ border-width: 0px;
+ background-image: none;
+ clear: both;
+ margin: 0 auto;
 }
 
 .main-nav {
-	clear: both;
+  clear: both;
+  text-transform: uppercase;
+  font-size: 1.2em;
+  font-family: 'Arvo', sans-serif;
+  font-weight: bold;
+}
+
+@media screen and (min-width: 650px) {
+  .js .main-nav {
+    margin-left: 20px;
+  }
 }
 
 @media screen and (max-width: 650px) {
   .js .main-nav {
-    background-color: #cacaca;
+    background-color: #c8c8c8;
     background-image: none;
     color: #000000;
     -ms-filter: none;
@@ -228,20 +274,22 @@ a::-moz-selection {
 }
 
 .menu a {
-	border-left: 0px;
-	color: #000000;
-	cursor: pointer;
-	display: block;
-	font-size: 13px;
-	font-weight: 700;
-	height: 35px;
-	line-height: 35px;
-	margin: 0;
-	padding: 0 0.9em;
-	position: relative;
-        text-shadow: none;
-	text-decoration: none;
-	white-space: nowrap;
+  font-size: 1.2em;
+  font-family: 'Arvo', sans-serif;
+  font-weight: bold;
+  border-left: 0px;
+  color: #000000;
+  cursor: pointer;
+  display: block;
+  font-weight: 700;
+  height: 1em;
+  line-height: 1em;
+  margin: 0;
+  padding: 0 0.9em;
+  position: relative;
+  text-shadow: none;
+  text-decoration: none;
+  white-space: nowrap;
 }
 
 .menu a:hover {
@@ -268,7 +316,7 @@ ul.menu > li:hover {
 }
 
 .menu li li {
-	background: #cacaca;
+	background: #c8c8c8;
 	background-image: none;
 	border: 0px;
 	color: #000000;
@@ -292,7 +340,7 @@ ul.menu > li:hover {
 }
 
 .menu li li a:hover {
-	background: #cacaca !important;
+	background: #c8c8c8 !important;
 	background-image: none;
 	border: none;
 	color: #000000;
@@ -300,7 +348,7 @@ ul.menu > li:hover {
 }
 
 .menu li li:hover {
-	background: #cacaca !important;
+	background: #c8c8c8 !important;
 	filter: none;
 }
 
