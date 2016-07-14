@@ -28,6 +28,7 @@ $more = 0;
 ?>
 
 <div id="content-blog" class="<?php echo esc_attr( implode( ' ', responsive_get_content_classes() ) ); ?>">
+<h1>JKL</h1>
 
 	<?php get_template_part( 'loop-header', get_post_type() ); ?>
 

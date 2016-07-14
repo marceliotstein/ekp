@@ -1,0 +1,8 @@
+<div class="post-meta">
+        <?php
+            $byline = get_post_meta(get_the_ID(),'Byline');
+            if (!empty($byline) && (!empty($byline[0]))) {
+              print $byline[0];
+            }
+        ?>
+</div>

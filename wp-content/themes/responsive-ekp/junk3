@@ -30,8 +30,4 @@ if ( !defined( 'ABSPATH' ) ) {
 	<?php //responsive_post_meta_data(); ?>
 </div><!-- end of .post-meta -->
 
-
-<?php 
-  $cats = get_the_category_list( ', ' ); 
-?>
-<span class="cats"><?php print $cats ?></span>
+<?php printf( __( 'Categories: %s', 'responsive' ), get_the_category_list( ', ' ) ); ?>

@@ -10,30 +10,110 @@
  Text Domain:  responsive-ekp
 */
 
+#content-archive .cats,
+#content-archive .post-entry,
+#content-archive .post-meta,
+#content-archive .post-data {
+  display: none;
+}
+
+#content-archive h2 {
+  font-size: 24px;
+}
+
 body {
   background: #c8c8c8;
   color: #000000;
+}
+
+.taxonomy-description p {
+  font-family: 'Slabo 27px', serif;
+  font-size: 3em;
+  margin-left: 21px;
+}
+
+.home-widgets {
+  display: none;
 }
 
 #content {
   margin-top: 0px;
 }
 
-.post-meta {
-  color: #000000;
+.post {
+  margin-left: 20px;
 }
 
-.byline {
+.post-title {
+  font-family: 'Slabo 27px', serif;
+}
+
+.post-meta {
   color: #000000;
+  font-size: 1.1em;
+  font-weight: 400;
+}
+
+div.post-meta {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.post-data {
+  font-size: 1.1em;
+  font-weight: 400;
+}
+
+p {
+  font-size: 1.2em;
+}
+
+div.post-data {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.site-credit {
+  margin-top: 15px;
+  font-size: .9em;
+  font-family: 'Slabo 27px', serif;
+  text-transform: uppercase;
+}
+
+.cats {
+  background-color: #000000;
+  font-weight: bold;
+  color: #c8c8c8;
+  padding: 5px;
+  border-radius: 3px;
+}
+
+.cats a {
+  color: #c8c8c8;
+  font-weight: bold;
+}
+
+.cats a:active, 
+.cats a:hover {
+  color: #c060c0;
+  font-weight: bold;
+}
+  
+.byline {
+  font-style: italic;
+  color: #000000;
+  margin-bottom: 0px;
 }
 
 #footer {
   font-family: 'BioRhyme Expanded', serif;
+  margin-left: 140px;
 }
 
 #featured img {
   width: 340px;
 }
+
   
 /* =Home page featured content 
 -------------------------------------------------------------- */
@@ -44,22 +124,29 @@ body {
 
 #featured-content li {
   list-style-type: none;
+  margin-top: 8px;
+  margin-bottom: 8px;
 }
 
 #featured-content ul {
   padding: 0;
   margin: 0;
   margin-left: 3px;
+  line-height: 1.5em;
+}
+
+div#respond.comment-respond {
+  display: none;
 }
 
 #featured-content a {
   font-weight: 400;
-  font-size: 1.2em;
+  font-size: 1.4em;
   font-family: 'Slabo 27px', serif;
 }
 
 #featured-content h3 {
-  color: purple;
+  color: #800080;
   font-family: 'Slabo 27px', serif;
   font-weight: 400;
   margin-bottom: .6em;
@@ -70,7 +157,7 @@ body {
 /* =Links
 -------------------------------------------------------------- */
 a {
-	color: purple;
+	color: #800080;
 	font-weight: 400;
 	text-decoration: none;
 }
@@ -125,11 +212,19 @@ a::-moz-selection {
 }
 
 #featured p {
-	font-size: 18px;
-	font-weight: 200;
-	line-height: 27px;
-	padding: 0 40px 0 40px;
-	text-align: center;
+  font-family: 'Slabo 27px', serif;
+  font-size: 18px;
+  font-weight: 200;
+  line-height: 27px;
+  padding: 0 40px 0 100px;
+  text-align: right;
+}
+
+#featured h4 {
+  font-family: 'Slabo 27px', serif;
+  margin-top: 20px;
+  margin-right: 38px;
+  text-align: right;
 }
 
 #featured-image {
@@ -165,6 +260,15 @@ a::-moz-selection {
   font-size: 1.2em;
   font-family: 'Arvo', sans-serif;
   font-weight: bold;
+}
+
+.menu li a {
+  color: #800080;
+}
+
+.menu li a:active, 
+.menu li a:hover {
+  color: #c060c0;
 }
 
 @media screen and (min-width: 650px) {
