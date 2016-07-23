@@ -17,6 +17,10 @@
   display: none;
 }
 
+.post-entry {
+  padding-top: 10px;
+}
+
 #content-archive h2 {
   font-size: 24px;
 }
@@ -61,7 +65,6 @@ h1 {
 
 div.post-meta {
   margin-top: 0px;
-  margin-bottom: 0px;
 }
 
 .post-data {
@@ -117,12 +120,19 @@ div.post-data {
   max-width: 1100px;
 }
 
+@media screen and (max-width: 980px) {
+  #footer {
+    margin-left: 0px;
+  }
+}
+
 #featured img {
   width: 340px;
 }
 
 #featured {
   padding-top: 24px;
+  padding-left: 34px;
   background-color: #c9c9c9;
   border: 0px;
   padding-bottom: 24px;
@@ -166,6 +176,14 @@ div.post-data {
 /* below 980px is one-column */
 
 @media screen and (max-width: 980px) {
+  .post {
+    margin-left: 0px;
+  }
+
+  #featured {
+    padding-left: 0px;
+  }
+
   #featured p {
     text-align: center;
     padding: 0px 0px 0px 0px;
@@ -183,10 +201,6 @@ div.post-data {
 
 @media screen and (max-width: 650px) {
   #featured {
-    margin-left: 10px;
-  }
-
-  .post {
     margin-left: 10px;
   }
 
@@ -257,6 +271,13 @@ a::-moz-selection {
 	margin: 0 auto;
 	max-width: 960px;
 	padding: 0px 25px;
+}
+
+
+@media screen and (max-width: 980px) {
+  #container {
+    padding: 0px 10px;
+  }
 }
 
 #wrapper {
@@ -342,7 +363,7 @@ a::-moz-selection {
 .menu ul {
 	display: block;
 	list-style-type: none;
-	margin: 0;
+	margin: 0px 0px 0px 5px;
 	padding: 0;
 }
 
@@ -417,7 +438,7 @@ a::-moz-selection {
 }
 
 .menu a {
-  font-size: 1.13em;
+  font-size: 1.2em;
   font-family: 'Arvo', sans-serif;
   font-weight: bold;
   border-left: 0px;
@@ -428,7 +449,7 @@ a::-moz-selection {
   height: 1em;
   line-height: 1em;
   margin: 0;
-  padding: 0 0.6em;
+  padding: 0 1em;
   position: relative;
   text-shadow: none;
   text-decoration: none;
